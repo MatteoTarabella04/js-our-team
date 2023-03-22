@@ -1,0 +1,11 @@
+p {
+   margin: 0.5rem;
+}
+
+img {
+   object-fit: none;
+}
+
+.card {
+   min-height: 100%;
+}
