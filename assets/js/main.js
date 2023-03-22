@@ -73,6 +73,10 @@ console.log('.-.-.-.--.-.-.-.-.-.-.-.-.-..-.-.-.');// space log
 
 getMemberInfo();
 
+// select row element to DOM
+const rowEl = document.querySelector('.row');
+
+createMarkup();
 
 
 
@@ -85,6 +89,23 @@ function getMemberInfo() {
       console.log(member.name);
       console.log(member.role);
       console.log(member.pic);
-      
+   }
+}
+
+// function who create DOM element card 
+function createMarkup() {
+
+   for (let i = 0; i < teamMembers.length; i++) {
+      const memberToDOM = teamMembers[i];
+      const markup = `
+      <div class="col">
+         <div class="card p-2 m-1">
+            <p><strong>Name:</strong> ${memberToDOM.name}</p>
+            <p><strong>Role:</strong> ${memberToDOM.role}</p>
+            <p><strong>Pic src:</strong> ${memberToDOM.pic}</p>
+         </div>
+      </div>
+      `
+      rowEl.innerHTML += markup;
    }
 }
