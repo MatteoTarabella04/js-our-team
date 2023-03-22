@@ -69,3 +69,22 @@ const teamMembers = [
 ];
 
 console.log(teamMembers);
+console.log('.-.-.-.--.-.-.-.-.-.-.-.-.-..-.-.-.');// space log
+
+getMemberInfo();
+
+
+
+
+/* FUNCTIONS */
+// function who log name, role and pic into console
+function getMemberInfo() {
+   for (let i = 0; i < teamMembers.length; i++) {
+      const member = teamMembers[i];
+      console.log(member);
+      console.log(member.name);
+      console.log(member.role);
+      console.log(member.pic);
+      
+   }
+}
