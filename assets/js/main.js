@@ -98,8 +98,9 @@ function createMarkup() {
    for (let i = 0; i < teamMembers.length; i++) {
       const memberToDOM = teamMembers[i];
       const markup = `
-      <div class="col">
-         <div class="card p-2 m-1">
+      <div class="col p-3">
+         <div class="card p-3">
+            <img src="./assets/img/${memberToDOM.pic}" alt="" class="img-fluid rounded-circle">
             <p><strong>Name:</strong> ${memberToDOM.name}</p>
             <p><strong>Role:</strong> ${memberToDOM.role}</p>
             <p><strong>Pic src:</strong> ${memberToDOM.pic}</p>
